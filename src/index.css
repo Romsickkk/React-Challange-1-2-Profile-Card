@@ -1,13 +1,61 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 20px 20px 20px 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainBox {
+  background-color: rgb(255, 255, 255);
+  flex-wrap: wrap;
+  gap: 10px;
+  display: inline-flex;
+  border: 5px solid black;
+
+  width: 240px;
+}
+.faceImg {
+  margin: 5px 10px 5px 10px;
+  height: 300px;
+  width: 220px;
+  border-radius: 5px;
+}
+.me {
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+.name {
+  margin: 0 0 20px 0;
+  color: rgb(0, 0, 0);
+}
+.aboutMe {
+  font-size: 1.2em;
+  color: gray;
+  margin: 0;
+}
+.discroption {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 5px 5px 5px 5px;
+  justify-content: space-evenly;
+}
+.skill {
+  margin: 0 5px;
+  display: inline-flex;
+  font-size: 16px;
+  border-radius: 100px;
+  padding: 5px 10px;
+  cursor: default;
+  background: linear-gradient(145deg, lightblue, #e0e0e0);
+  filter: brightness(95%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+.skill:hover {
+  background: linear-gradient(145deg, rgb(0, 0, 0), #e0e0e0);
+  transform: scale(1.2);
+  filter: brightness(100%);
 }
